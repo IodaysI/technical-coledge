@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="study.js" defer></script>
+        <link href="bulma-cdn.css" rel="stylesheet">
+        <link href="study.css" rel="stylesheet">
+        <title>Study site</title>
+    </head>
+    <body>
+        <nav class="navbar ">
+            <div class="navbar-burger burger" data-target="navMenubd-example">
+                <span></span>
+                <span></span>
+                 <span></span>
+            </div>
+            <div id="navMenubd-example" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item">
+                        <a class="navbar-item is-tab" href="index.html">
+                         Home
+                         </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="navbar-item">
+                        <a class="navbar-item is-tab is-active" href="kalkulator.html">
+                         Kalkulator
+                         </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="navbar-item">
+                        <a class="navbar-item is-tab" href="slider.html">
+                        Slider
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <p>Number 1:</p>
+        <p><input type="text" id="num1"></p>
+        <p>Number 2:</p>
+        <p><input type="text" id="num2"></p>
+        <button class="button is-success is-outlined" onclick="plus()">+</button>
+        <button class="button is-success is-outlined" onclick="minus()">-</button>
+        <button class="button is-success is-outlined" onclick="div()">/</button>
+        <button class="button is-success is-outlined" onclick="mult()">*</button>
+        <button class="button is-success is-outlined" onclick="clearing()">c</button>
+        <br />
+        <p>Result:</p>
+        <p id="res"></p>
+    </body>
+</html>
